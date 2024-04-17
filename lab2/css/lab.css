@@ -1,9 +1,94 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
+h1 {
+  color: rgb(224, 196, 68);
+  font-size: 400%;
+}
+p{
+  font-family: "Times New Roman";
+  text-indent: 45px;
+  margin-left: 20px;
+}
+
+a{
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  color: #c58af9;
+}
+
+#content{
+  background-color: rgb(0, 0, 0);
+  width: 800px;
+  min-height: 400px;
+  margin: 15px;
+  border: double 15px #ccdd36;
+  font-size: 30px;
+}
+
+/*
+  value = possible setting for a property. oclor can be red, black, blue...
+  Basic style properties:
+    background-color
+    border
+    font-weight
+    font-family
+    color
+    text-align
+  modify css in webpage, then transfer to css file in TE
+  keep css separate from html and javascript
+
+  ID: #
+  Class: .
+
+  p{color:red;} - select all paragraphs
+  p#red-one{color:red;} select paragraph with id red-one
+  p.callout{color:red;} select all paragraphs with class callout
+  .callout{color:red;} select all elements with class callout
+  div.callout p{color: red;} select the div with class callout, within that select the paragraphs
+  p.special{color:red;} 
+  p{color:black;}
+  **css - more specificity takes precedence over less specificity
+  Nested Html tags inherit the properties of their parents
+  p - tag name
+  { - open bracket
+  color: - property
+  red - value
+  } - close bracket
+  Selectors - 
+    Tag Names, 
+    ID names(# + ID) or (Element + # + ID), 
+    Class Names (. + Class) or (Element + . + Class), 
+    Inside An Element(Element + Space + Element),
+    More Than One(Element + , + Element),
+    Children(Element + > + Element), - Selects immediate children of an element
+  More Magic
+    div.special {
+      margin: 10px;}   Select any div with class name .special
+    div .special{
+      margin: 10px;}   Select any class .special within div
+    div,.special{
+      margin: 10px;}   Select all div and all class .special
+    .special div{
+      margin: 10px;}   Select any div within any element with class .special
+  CSS Style Guide
+      Everything below selector is indented
+      One space after all punctuation
+
+      Rule 1: Selectors on one line
+      Rule 2: use whitespace
+      Rule 3: Put each attriubte and value on its own line
+      Rule 4: Curly brackets follow the selector and are on a  new line after the last rule
+      Rule 5: We indent everything within curly brackets
+      Rule 6: Add a space after all punctuation
+      Rule 7: lowercase at all times except font names
+      Rule 8: Units follow their number with no spaces
+      Rule 9: Insert comments to help you maintain your code
+
+CSS Pseudo Classes
+      :hover
+      :first-child
+      :focus
+      :not(selector)
+      (There are a lot of them)
+      
+*/

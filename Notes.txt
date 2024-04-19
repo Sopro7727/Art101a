@@ -1,0 +1,141 @@
+4/16/2024
+value = possible setting for a property. oclor can be red, black, blue...
+  Basic style properties:
+    background-color
+    border
+    font-weight
+    font-family
+    color
+    text-align
+  modify css in webpage, then transfer to css file in TE
+  keep css separate from html and javascript
+
+  ID: #
+  Class: .
+Examples
+  p{color:red;} - select all paragraphs
+  p#red-one{color:red;} select paragraph with id red-one
+  p.callout{color:red;} select all paragraphs with class callout
+  .callout{color:red;} select all elements with class callout
+  div.callout p{color: red;} select the div with class callout, within that select the paragraphs
+  p.special{color:red;} 
+  p{color:black;}
+
+
+  **css - more specificity takes precedence over less specificity
+  Nested Html tags inherit the properties of their parents
+  p - tag name
+  { - open bracket
+  color: - property
+  red - value
+  } - close bracket
+
+  Selectors - 
+    Tag Names, 
+    ID names(# + ID) or (Element + # + ID), 
+    Class Names (. + Class) or (Element + . + Class), 
+    Inside An Element(Element + Space + Element),
+    More Than One(Element + , + Element),
+    Children(Element + > + Element), - Selects immediate children of an element
+
+  More Magic
+    div.special {
+      margin: 10px;}   Select any div with class name .special
+    div .special{
+      margin: 10px;}   Select any class .special within div
+    div,.special{
+      margin: 10px;}   Select all div and all class .special
+    .special div{
+      margin: 10px;}   Select any div within any element with class .special
+
+  CSS Style Guide
+      Everything below selector is indented
+      One space after all punctuation
+
+      Rule 1: Selectors on one line
+      Rule 2: use whitespace
+      Rule 3: Put each attriubte and value on its own line
+      Rule 4: Curly brackets follow the selector and are on a  new line after the last rule
+      Rule 5: We indent everything within curly brackets
+      Rule 6: Add a space after all punctuation
+      Rule 7: lowercase at all times except font names
+      Rule 8: Units follow their number with no spaces
+      Rule 9: Insert comments to help you maintain your code
+
+CSS Pseudo Classes
+      :hover
+      :first-child
+      :focus
+      :not(selector)
+      (There are a lot of them)
+
+-----------------------------------------------------------------------------------------
+4/18/2024  - File Structrue and Pseudocode
+True file structure is very important
+Folders and files are organized hierarchically
+What is a file? - An ordinary file contains data
+    lab.css
+    bio-pic.jpg
+    index.html
+What is a folder? - A collection of files
+    css
+    img
+    js
+What is a directory?
+    art101
+
+Creating File Structure
+    To create a new file in Atom, right click on the project folder where you want your new file. Select new file and give it a name with a file extension, like index.html
+    To create a new folder in ATom, right click on the project folder wheere you want your new folder. Select new folder and give it a name, like css
+    You can also rename files and oflder, move them, and copy them within an Atom project. We can also do this in finder or file explorer. (Be careful not to do this unintentionally)
+    The more organized your file structure is, the easier your job will be and the better web developer you will be.
+
+File Hierarchy
+    Folders and files can have "parents", "children", "siblings", and a "roots"
+    A parent folder is the folder that contains a particular file or folder.
+    A child file or folder is the one contained within a parent folder.
+    Siblings are files or folders in the same folder.
+    When we want to reference a file that is a sibling, we can just use the filename:
+        <img src = "hello.jpg">
+
+Ways to link files
+    We can use an anchor tag <a> to link to files
+    We can use the image tag <img> to link to image files
+    We can use the link tag <link> to link files
+
+example directory
+    .art101 
+        index.html       - How to Link -->       <img src = "./img/dog.jpg">     <link href ="./css/site.css">       <a href = "./lab3/index.html">
+        css
+            site.css            
+        lab3
+            index.html  - How to Link -->        <link href = "./css/lab.css">      <img src = "./img/cat.jpg">  /  <a href = "../index.httml">       <link href = "../css/site.css">     <img src = "../img/dog.jpg">
+            css 
+                lab.css
+            img
+                cat.jpg
+        img
+            dog.jpg
+
+    Relative links apply to the html file you are working on (see example above)
+
+Naming Conventions
+    What do you notice about all the file and folder names?
+        We use all lowercase
+        We use dashes instead of spaces
+
+Local vs. Server
+    When we say local, we mean files on the computer
+    When we say server, we mean files available from a computer somewhere on the internet
+    If we want our files to be seen on the internet, then upload
+Remember
+    Test and debug locally
+    make changes, hit reload.
+    upload only after our files are working
+
+File transfer protocol
+    To upload files, we use an internet standard called "file transfer protocol", (though these days we use SFTP, a secure version of FTP)
+    We use special sftp software to upload our file structure to the server
+    Cyberduck and Filezilla are popular
+    in our case, we are using github desktop which does the file transfer to our git repo behind the scenes
+    Once we put push our commits, we are all set.

@@ -35,3 +35,8 @@ h1 {
   background-color: #A3C9A8;
 }
 
+a{
+  font-size: xx-large;
+  border: dashed 3px #b20000;
+  background: rgb(255, 255, 255);
+}

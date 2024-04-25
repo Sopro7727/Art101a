@@ -139,3 +139,9 @@ File transfer protocol
     Cyberduck and Filezilla are popular
     in our case, we are using github desktop which does the file transfer to our git repo behind the scenes
     Once we put push our commits, we are all set.
+------------------------------------------------------------------------------------------
+4/23/2024
+Absent
+------------------------------------------------------------------------------------------
+4/25/2024 - Arrays and Objects
+we reference the individual items from a list by using it's index (starts at 0)

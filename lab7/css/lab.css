@@ -7,3 +7,41 @@
     border: solid 1px #888;
     background-color: #DDD8C4;
   }
+
+.anagram {
+  width: 400px;
+  height: 301px;
+  background-color: rgb(240, 60, 50);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-style: oblique;
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: 550px;
+  right: 100px;
+  float: left;
+  margin: 10px;
+}
+
+#name{
+  width: 400px;
+  height: 158px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-style: normal;
+  color: rgb(0, 0, 0);
+  font-size: 30px;
+  position: absolute;
+  top: 107px;
+  right: 0px;
+}

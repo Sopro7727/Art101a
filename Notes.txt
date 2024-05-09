@@ -145,3 +145,7 @@ Absent
 ------------------------------------------------------------------------------------------
 4/25/2024 - Arrays and Objects
 we reference the individual items from a list by using it's index (starts at 0)
+
+
+
+If you find a working demo and get it to work on your machine, you should have no issues modifying it

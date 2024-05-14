@@ -9,8 +9,12 @@
   }
   
 .special{
-    background-color: lavender;
+    background-color: rgb(119, 119, 214);
     border: dotted 50px red;
     color: pink;
     font-weight: bold;
+}
+#out{
+  position: relative;
+  left: 750px;
 }

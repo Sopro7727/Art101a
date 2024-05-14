@@ -19,3 +19,20 @@
     font-family: sans-serif;
     font-size: 0.8em;
   }
+
+  #outgoing p{
+    display: inline-block;
+    max-width: 60%;
+    margin: 3px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #218AFF;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.8em;
+    right: 50px;
+  }
+
+  .div-right{
+    text-align: right;
+  }

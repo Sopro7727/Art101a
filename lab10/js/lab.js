@@ -30,7 +30,15 @@ function myFunction(param1, param2) {
 $("#make-convo").click(function(){
   console.log("click");
   const newText = generateRandomText();
-  $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+  console.log(swap);
+  if(swap == true){
+    $("#output").append('<div class="text"><p>' + newText + '</p></div>');
+    swap = false;
+  }
+  else{
+    $("#output").append('<div class="text div-right" id="outgoing"><p>' + newText + '</p></div>');
+    swap = true;
+  }
 });
   // let's get this party started
   main();

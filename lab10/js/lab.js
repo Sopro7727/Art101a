@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - generates random text from a lorem ipsum collection, then simulates a text conversation of gibberish.
+// Author: Noah Walker
+// Date: May 16, 2024
 
 // Constants
 let swap = true;

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>Lab 12: Conditionals</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- Include a sitewide CSS file for consistent styling across the site -->
+	<link rel="stylesheet" type="text/css" href="../css/site.css">
+	<!-- Lab-specifc CSS file for any special styling of this particular page -->
+	<link rel="stylesheet" type="text/css" href="css/lab.css">
+	
+	<!-- load jQuery library to make javascript easier (must be above our lab js)-->
+	<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+	<!-- Link to javascript file - DEFER waits until all elements are rendered -->
+	<script type="text/javascript" src="./js/lab.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>Lab 12: Conditionals</h1>
+			<div class="minor-section">
+					<h2>Challenge</h2>
+					<p>Working with your partner, create a function that depends on conditionals.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Problems</h2>
+					<p>I had some issues regarding condensing my code into a cleaner and more concise version. I accomplished this through using a switchcase rather than an if statement, and I think it looks a little better now.</p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Reflection</h2>
+					<p>This assignment was interesting. I think I rewrote the conditional 4 times, each time using a different strategy before I settled on the one I wanted to use. This was really time consuming, and it kinda made my head hurt. </p>
+			</div>
+
+			<div class="minor-section">
+					<h2>Results</h2>
+					<div id="output">
+						<h4>I will now sort you into a hogwarts house.</h4>
+						<label>
+							Please enter your FULL NAME for sorting: <input type="text" id="user-name" placeholder="Input your name">
+                        </label>
+						<button id="submit">Sort Me!</button>
+                    </div>
+			</div>
+		</section>
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+			<a href = "../index.html">Homepage</a>
+			<a href = "./js/lab.js">Javascript Source Code</a>
+		</nav>
+	</main>
+</body>
+</html>

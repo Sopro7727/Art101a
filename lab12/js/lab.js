@@ -10,7 +10,6 @@ let newHouses = ["Gryffindor", "Slytherin", "Hufflepuff", "Ravenclaw", "Grufflep
 function sumAsciiValues(inputString) {
     // Convert the string to an array of characters
     let characters = inputString.split('');
-
     // Calculate the sum of ASCII values
     let sum = characters.reduce((acc, char) => {
         // Convert each character to its ASCII value and add it to the accumulator

@@ -1,6 +1,6 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// index.js - Working with your partner, experiment with jQuery and AJAX.
+// Author: Noah Walker
+// Date: June 2, 2024
 
 const URL = "https://perenual.com/api/pest-disease-list";
 
